@@ -1,6 +1,8 @@
 package com.jonasriedel;
 
 import com.jonasriedel.languages.Java;
+import com.jonasriedel.languages.Javascript;
+
 import java.util.Scanner;
 
 public class Main {
@@ -24,6 +26,10 @@ public class Main {
             case "Java":
                 CreateFile.create(".gitignore_java");
                 WriteFile.writeFile(".gitignore_java", Java.generateJava());
+                break;
+            case "Javascript":
+                CreateFile.create(".gitignore_javascript");
+                WriteFile.writeFile(".gitignore_javascript", Javascript.generateJavascript());
                 break;
             default:
                 System.out.println("Not a valid language! Try again.");
