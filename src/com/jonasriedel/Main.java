@@ -2,6 +2,7 @@ package com.jonasriedel;
 
 import com.jonasriedel.languages.Java;
 import com.jonasriedel.languages.Javascript;
+import com.jonasriedel.languages.NodeJS;
 
 import java.util.Scanner;
 
@@ -28,17 +29,25 @@ public class Main {
                 WriteFile.writeFile(".gitignore_java", Java.generateJava());
                 Main.printGeneratedInfo();
             }
+
             case "Javascript" -> {
                 CreateFile.create(".gitignore_javascript");
                 WriteFile.writeFile(".gitignore_javascript", Javascript.generateJavascript());
                 Main.printGeneratedInfo();
             }
+
+            case "NodeJS" -> {
+                CreateFile.create(".gitignore_nodejs");
+                WriteFile.writeFile(".gitignore_nodejs", NodeJS.generateNodeJS());
+                Main.printGeneratedInfo();
+            }
+
             default -> System.out.println("Not a valid language! Try again.");
         }
     }
 
     private static void printLanguages() {
-        System.out.println("Java, Javascript");
+        System.out.println("Java, Javascript, NodeJS");
     }
 
     private static void printHelp() {
