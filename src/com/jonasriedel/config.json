@@ -1,0 +1,14 @@
+{
+  "languages": [
+    {
+      "name": "Javascript",
+      "alias": ["js"],
+      "filepath": "src/com/jonasriedel/utils/languages/javascript.txt"
+    },
+    {
+      "name": "Java",
+      "alias": [],
+      "filepath": "src/com/jonasriedel/utils/languages/java.txt"
+    }
+  ]
+}
