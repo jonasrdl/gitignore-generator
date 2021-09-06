@@ -1,9 +1,4 @@
-package com.jonasriedel.languages;
-
-public class NodeJS {
-    public static String generateNodeJS() {
-        return """
-                # Logs
+# Logs
                 logs
                 *.log
                 npm-debug.log*
@@ -118,6 +113,4 @@ public class NodeJS {
                 .yarn/unplugged
                 .yarn/build-state.yml
                 .yarn/install-state.gz
-                .pnp.*""";
-    }
-}
+                .pnp.*
